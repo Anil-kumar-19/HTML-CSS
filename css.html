@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of CSS</title>
+    <!-- exeternal css link -->
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <style>
+        /* internal css */
+        /* h2{
+            background-color: bisque;
+            color: blue;
+        } */
+        /* using HtmlTag(internal css) */
+        h2{
+            color: red;
+        }
+
+        /* using Id  */
+        #home{
+            background-color: gray;
+        }
+        #about{
+            border-radius: 2px;
+            background-color: aquamarine;
+            color: green;
+        }
+        /* using class */
+        .home-main{
+            color: white;
+        }
+        /* multiple selector */
+        #home,#about{
+            border: 1px red solid;
+            border-bottom: 2px red solid;
+        }
+        /* nested selector */
+        #about p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--Inline css  -->
+    <!-- <h1 style="color: red; background-color: aqua;">Hello World</h1> -->
+    <!-- <h2>Good morning</h2>
+    <p>new terms and concepts are required. The most important being the concept of chirality. 
+        A chiral object is one that cannot be superposed on its mirror image. The term originates 
+        from the greek term for “hand”. As it is with human hands, the left hand cannot be 
+        superimposed on </p> -->
+
+
+        <div id="home">
+            <h2 class="home-main">Home</h2>
+            <p>new terms and concepts are required. The most important being the concept of chirality. 
+                chiral object is one that cannot be superposed on its mirror image. The term originates 
+                from the greek term for “hand”. As it is with human hands, the left hand cannot be 
+                superimposed on </p>
+        </div>
+
+        <div id="about">
+            <h2>About</h2>
+            <p>new terms and concepts are required. The most important being the concept of chirality. 
+                chiral object is one that cannot be superposed on its mirror image. The term originates 
+                from the greek term for “hand”. As it is with human hands, the left hand cannot be 
+                superimposed on </p>            
+        </div>
+</body>
+</html>
