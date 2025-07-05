@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .box{
+            padding: 1rem;
+            margin: 1rem;
+            background: coral;
+            color: white;
+            /* offset-x | offset-y |color*/
+            /* box-shadow: 20px 20px teal; */
+
+            /* offset-x | offset-y |blur-raduis |color */
+            box-shadow: 10px 10px 20px teal;
+
+            /* offset-x | offset-y |blur-raduis |spread |color */
+            box-shadow: 10px 10px 20px 1px teal;
+
+            /* inset |offset-x | offset-y |color
+            box-shadow: inset -10px -10px  teal; */
+
+            /* Multiple shadow */
+            box-shadow: 3px 3px 5px green, -3px -3px 5px red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Heading</h2>
+            <p>A flexible and proactive graduate with a strong foundation in computer science, 
+                    including programming, databases, and basic IT tools. Possess strong communication, 
+                    analytical thinking</p>
+        </div>
+
+        <div class="box">
+            <h2>Heading</h2>
+            <p>A flexible and proactive graduate with a strong foundation in computer science, 
+                    including programming, databases, and basic IT tools. Possess strong communication, 
+                    analytical thinking</p>
+        </div>
+
+        <div class="box">
+            <h2>Heading</h2>
+            <p>A flexible and proactive graduate with a strong foundation in computer science, 
+                    including programming, databases, and basic IT tools. Possess strong communication, 
+                    analytical thinking</p>
+    </div>
+</body>
+</html>

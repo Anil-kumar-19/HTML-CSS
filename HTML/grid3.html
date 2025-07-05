@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template area</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+            'header header header'
+            'content content aside'
+            'box1 box2 box2'
+            'box3 box3 box3'
+            'footer footer footer';
+            grid-gap: 1rem;
+        }
+        .header{
+            grid-area: header;
+            text-align: center;
+        }
+        .content{
+            grid-area: content;
+        }
+        .aside{
+            grid-area: aside;
+        }
+        .box1{
+            grid-area: box1;
+        }
+        .box2{
+            grid-area: box2;
+        }
+        .box3{
+            grid-area: box3;
+        }
+        .footer{
+            grid-area: footer;
+            text-align: center;
+        }
+        .header,.content,.aside,.box1,.box2,.box3,.footer{
+            border: 1px solid #ccc;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>My Website</h1>
+            </header>
+            <section class="content">
+                <h2>Welcome</h2>
+                <p>A flexible and proactive graduate with a strong foundation in computer science, 
+                    including programming, databases, and basic IT tools. Possess strong communication, 
+                    analytical thinking, and teamwork abilities. Ready to contribute effectively in both 
+                    technical and non-technical job roles, with a commitment to continuous learning and 
+                    professional development.</p>
+            </section>
+            <aside class="aside">
+                <h3>Contact us</h3>
+                <ul>
+                    <li>Sringeri tech</li>
+                    <li>Sringeritech@gmail.com</li>
+                    <li>4556378558</li>
+                </ul>
+            </aside>
+            <div class="box1">
+                <h3>Heading</h3>
+                <p>A flexible and proactive graduate with a strong foundation in computer science, 
+                    including programming, databases, and basic IT tools. Possess strong communication, 
+                    analytical thinking, and teamwork abilities. Ready to contribute effectively in both 
+                    technical and non-technical job roles, with a commitment to continuous learning and 
+                    professional development.</p>
+            </div>
+
+            <div class="box2">
+                <h3>Heading</h3>
+                <p>A flexible and proactive graduate with a strong foundation in computer science, 
+                    including programming, databases, and basic IT tools. Possess strong communication, 
+                    analytical thinking, and teamwork abilities. Ready to contribute effectively in both 
+                    technical and non-technical job roles, with a commitment to continuous learning and 
+                    professional development.</p>
+            </div>
+
+            <div class="box3">
+                <h3>Heading</h3>
+                <p>A flexible and proactive graduate with a strong foundation in computer science, 
+                    including programming, databases, and basic IT tools. Possess strong communication, 
+                    analytical thinking, and teamwork abilities. Ready to contribute effectively in both 
+                    technical and non-technical job roles, with a commitment to continuous learning and 
+                    professional development.</p>
+            </div>
+        <footer class="footer">
+            <p>Copyright@2025</p>
+        </footer>
+    </div>
+</body>
+</html>

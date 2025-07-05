@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox basics</title>
+    <style>
+        .box{
+            background-color: #f4f4f4;
+            border: #ccc solid 1px;
+            padding: 1rem;
+            text-align: center;
+            flex: 1;
+            margin: 0.75rem;
+        }
+        #container{
+            display: flex;
+            /* flex-direction: row;
+            flex-wrap: wrap; */
+            flex-flow: row wrap;
+        }
+
+        /* sudo */
+        .box:first-child{
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box"><h3>Box-1</h3></div>
+        <div class="box"><h3>Box-2</h3></div>
+        <div class="box"><h3>Box-3</h3></div>
+        <div class="box"><h3>Box-4</h3></div>
+        <div class="box"><h3>Box-1</h3></div>
+        <div class="box"><h3>Box-2</h3></div>
+        <div class="box"><h3>Box-3</h3></div>
+        <div class="box"><h3>Box-4</h3></div>
+        <div class="box"><h3>Box-1</h3></div>
+        <div class="box"><h3>Box-2</h3></div>
+        <div class="box"><h3>Box-3</h3></div>
+        <div class="box"><h3>Box-4</h3></div>
+    </div>
+</body>
+</html>

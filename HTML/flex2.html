@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex alignment and justify</title>
+    <style>
+        #container{
+            display: flex;
+            background-color: black;
+            flex-wrap: wrap;
+            /* justify content */
+            justify-content:space-around;
+            /* option for justify-content 
+            flex-start
+            flex-end
+            space-between
+            space-around
+            space-evenly
+            center
+             */
+            height: 600px;
+            /* align items */
+            align-items: flex-start;
+            /* Options 
+             flex-start
+            flex-end
+            center
+            stretch*/
+
+            /* align items vertically */
+            align-content: stretch;
+            /* Options
+            flex-start
+            flex-end
+            center
+            stretch */
+        }
+        .item1{
+            order: 3;
+        }
+        .item2{
+            /*align item self  */
+            align-self: center;
+            order: 2;
+            /* Options
+            flex-start
+            flex-end
+            center
+            stretch */
+        }
+        .item3{
+            order: 1;
+        }
+        .item{
+            background-color: #f4f4f4;
+            border: #ccc solid 1px;
+            padding: 1rem;
+            text-align: center;
+            margin: 0.5rem;
+            flex-basis: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item item1"><h3>Item1</h3></div>
+        <div class="item item2"><h3>Item2</h3></div>
+        <div class="item item3"><h3>Item3</h3></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables</title>
+    <style>
+        :root{
+            --light-color:#ccc;
+            --primary-color:red;
+            --secondary-color:green;
+            --max-width:1100px;
+            --box1-width:1;
+            --box2-width:2;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4;
+            background: var(--light-color);
+        }
+        header{
+            background-color: var(--primary-color);
+            border-bottom: 5px solid var(--secondary-color);
+            color: #ccc;
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            margin: auto;
+            max-width: var(--max-width);
+        }
+        .box{
+            background-color: var(--primary-color);
+            border-bottom: 5px solid var(--secondary-color);
+            color: #fff;
+            padding: 1rem;
+            margin: 1rem;
+        }
+        .box1{flex:var(--box1-width)}
+        .box2{flex:var(--box2-width)}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS variables</h1>
+    </header>
+    <div class="container">
+        <div class="box box1">
+            <h2>Heading</h2>
+            <p>A flexible and proactive graduate with a strong foundation in computer science, 
+                    including programming, databases, and basic IT tools. Possess strong communication, 
+                    analytical thinking</p>
+        </div>
+
+        <div class="box box2">
+            <h2>Heading</h2>
+            <p>A flexible and proactive graduate with a strong foundation in computer science, 
+                    including programming, databases, and basic IT tools. Possess strong communication, 
+                    analytical thinking</p>
+        </div>
+    </div>
+</body>
+</html>

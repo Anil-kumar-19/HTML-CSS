@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Basics</title>
+    <style>
+    .item{
+        background-color: #f4f4f4;
+        padding: 3rem;
+        border: #ccc solid 1px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    .container{
+        display: grid;
+        /* column wise */
+        /* grid-template-columns: repeat(3,auto); */
+        /* grid-template-columns: 1fr 2fr 3fr; */
+        /* grid-template-columns: 200px auto 200px; */
+        grid-template-columns: repeat(3,150px);
+        grid-gap: 1rem;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-gap: 1.5rem;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"><h3>Item 1</h3></div>
+        <div class="item"><h3>Item 2</h3></div>
+        <div class="item"><h3>Item 3</h3></div>
+        <div class="item"><h3>Item 1</h3></div>
+        <div class="item"><h3>Item 2</h3></div>
+        <div class="item"><h3>Item 3</h3></div>
+    </div>
+
+    <main>
+        <section>
+            <h2>Welcome</h2>
+            <p>The next question that comes to the mind is how to determine whether a molecule is 
+            chiral or achiral. At times, it becomes extremely difficult to determine with increasing 
+            molecular complexity, to determine the non superimposibity of a compound with its 
+            mirror image.</p>
+        </section>
+        <aside>
+            <h2>About</h2>
+            <p>The next question that comes to the mind is how to determine whether a molecule is 
+            chiral or achiral. At times, it becomes extremely difficult to determine with increasing 
+            molecular complexity, to determine the non superimposibity of a compound with its 
+            mirror image.</p>
+        </aside>
+    </main>
+</body>
+</html>
