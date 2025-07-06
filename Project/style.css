@@ -4,7 +4,7 @@
 }
 :root{
     --gradient-color:linear-gradient(rgb(230,16,201),#fdba02);
-    --background-color: #0f0c29;
+    --background-color: #014e6d;
     --primary-color:#fdba02;
 }
 
@@ -12,7 +12,7 @@ body{
     font-family: 'Dancing Script',cursive;
     background-color: var(--background-color);
     border: 2rem solid transparent;
-    border-image: linear-gradient(95deg,rgb(230,16,201),#fdba02);
+    border-image: linear-gradient(95deg,rgb(2, 102, 148),#2ee273);
     border-image-slice: 2;
 }
 
